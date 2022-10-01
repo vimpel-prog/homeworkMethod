@@ -5,9 +5,9 @@ public class Main {
         int year = 1992;
         checkForLeapYear(year);
 
-        System.out.println(checkOS(1,2019));
+        System.out.println(checkOS(1, 2019));
 
-        System.out.println("Потребуется дней - "+countDeliveryDays(60));
+        System.out.println("Потребуется дней - " + countDeliveryDays(60));
     }
 
     public static void checkForLeapYear(int year) {
@@ -23,7 +23,7 @@ public class Main {
             oSys = "iOS";
         } else oSys = "Android";
         if (year < currentYear) {
-            return "Установите облегченную версию приложения для "+oSys+" по ссылке";
+            return "Установите облегченную версию приложения для " + oSys + " по ссылке";
         } else return "Установите обычную версию приложения для " + oSys + " по ссылке";
     }
 
