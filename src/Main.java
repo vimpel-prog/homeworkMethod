@@ -16,10 +16,10 @@ public class Main {
         } else System.out.println(year + " - не високосный год");
     }
 
-    public static String checkOS(int OS, int year) {
+    public static String checkOS(int clientOs, int year) {
         int currentYear = LocalDate.now().getYear();
         String oSys;
-        if (OS == 0) {
+        if (clientOs == 0) {
             oSys = "iOS";
         } else oSys = "Android";
         if (year < currentYear) {
